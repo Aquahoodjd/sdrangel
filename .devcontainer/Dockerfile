@@ -11,46 +11,59 @@ ENV DBUS_SESSION_BUS_ADDRESS="autolaunch:" DISPLAY=":1" LANG="en_US.UTF-8" LANGU
 
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get -y install \
+    autoconf \
+    automake \
     bison \
-    build-essential \
     cmake \
-    debhelper \
-    devscripts \
-    fakeroot \
+    doxygen \
     ffmpeg \
     flex \
+    g++ \
     gdb \
     git \
-    libairspy-dev \
+    graphviz \
     libasound2-dev \
     libavcodec-dev \
     libavformat-dev \
     libboost-all-dev \
-    libcodec2-dev \
+    libfaad-dev \
     libfftw3-dev \
-    libhackrf-dev \
     libiio-dev \
     libiio-utils \
     libopencv-dev \
-    libopencv-imgcodecs-dev \
     libopus-dev \
     libqt5charts5-dev \
     libqt5multimedia5-plugins \
     libqt5opengl5-dev \
+    libqt5quick5 \
     libqt5serialport5-dev \
     libqt5texttospeech5-dev \
     libqt5websockets5-dev \
-    librtlsdr-dev \
+    libtool \
     libusb-1.0-0-dev \
+    libusb-dev \
     libxml2-dev \
     ninja-build \
+    pkg-config \
+    pulseaudio \
+    qml-module-qtlocation \
+    qml-module-qtlocation \
+    qml-module-qtpositioning \
+    qml-module-qtquick-controls \
+    qml-module-qtquick-controls2 \
+    qml-module-qtquick-dialogs \
+    qml-module-qtquick-layouts \
+    qml-module-qtquick-window2 \
     qtbase5-dev \
+    qtbase5-dev \
+    qtchooser \
     qtdeclarative5-dev \
     qtlocation5-dev \
     qtmultimedia5-dev \
     qtpositioning5-dev \
     qttools5-dev \
     qttools5-dev-tools \
+    zlib1g-dev \
     && rm -rf /var/lib/apt/lists/*
 
 ENTRYPOINT ["/usr/local/share/desktop-init.sh"]
