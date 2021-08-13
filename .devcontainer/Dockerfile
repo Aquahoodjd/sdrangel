@@ -22,6 +22,7 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     g++ \
     gdb \
     git \
+    golang \
     graphviz \
     libasound2-dev \
     libavcodec-dev \

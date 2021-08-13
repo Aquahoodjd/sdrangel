@@ -18,6 +18,7 @@
     "extensions": [
         "cschlosser.doxdocgen",
         "eamodio.gitlens",
+        "golang.go",
         "ms-vscode.cmake-tools",
         "ms-vscode.cpptools",
         "twxs.cmake",
